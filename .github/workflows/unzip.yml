@@ -1,0 +1,22 @@
+name: Unzip Source
+on: [push, workflow_dispatch]
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unzip
+        run: |
+          unzip Orange_2.0.6_src.zip -d ./extracted
+          rm Orange_2.0.6_src.zip
+          mv ./extracted/* .
+          rm -rf ./extracted
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Auto unzip source code"
+          git push
