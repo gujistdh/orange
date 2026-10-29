@@ -1,0 +1,68 @@
+{
+  "orange": 2,
+  "category": "脚本",
+  "modules": [
+    { "id": "watermarkText", "name": "显示水印", "icon": "INFO", "keybind": true, "on": true, "settings": [
+      { "type": "num", "name": "大小", "min": 0, "max": 1000, "value": 1000, "decimals": 0 },
+      { "type": "num", "name": "不透明", "min": 0, "max": 100, "value": 65, "decimals": 0 },
+      { "type": "text", "name": "颜色", "value": "白色" }
+    ]},
+    { "id": "message", "name": "自动发言", "icon": "CHAT", "keybind": true, "settings": [
+      { "type": "mode", "name": "方式", "modes": ["内容发送", "自定义发送"], "index": 0 },
+      { "type": "text", "name": "内容", "value": "Orange", "depends_on": "方式", "depends_index": 0 },
+      { "type": "text", "name": "读取发送", "value": "/storage/emulated/0/Android/data/com.netease.x19/files/Orange/自动发言/demo.txt", "depends_on": "方式", "depends_index": 1 },
+      { "type": "num", "name": "间隔", "min": 1, "max": 1000, "value": 300, "decimals": 2 }
+    ]},
+    { "id": "chatEffects", "name": "聊天特效", "icon": "SPARK", "keybind": true, "settings": [
+      { "type": "mode", "name": "方式", "modes": ["颜色", "彩虹", "无"], "index": 0 },
+      { "type": "text", "name": "颜色", "value": "白色" },
+      { "type": "flag", "name": "乱码", "value": false },
+      { "type": "flag", "name": "加粗", "value": false },
+      { "type": "flag", "name": "斜体", "value": false }
+    ]},
+    { "id": "pyLoader", "name": "PY加载器", "icon": "FOLDER", "keybind": true, "settings": [] },
+    { "id": "buildingTools", "name": "建筑工具", "icon": "CUBE", "keybind": true, "settings": [
+      { "type": "mode", "name": "类型", "modes": ["导入", "导出"], "index": 0 },
+      { "type": "mode", "name": "导入类型", "modes": ["Fill", "SetBlock"], "index": 0, "depends_on": "类型", "depends_index": 0 },
+      { "type": "num", "name": "导入速度", "min": 0, "max": 1000, "value": 100, "decimals": 0, "depends_on": "类型", "depends_index": 0 },
+      { "type": "num", "name": "导入间隔", "min": 0, "max": 100, "value": 25, "decimals": 0, "depends_on": "类型", "depends_index": 0 },
+      { "type": "num", "name": "暂停间隔", "min": 0, "max": 100, "value": 25, "decimals": 0, "depends_on": "类型", "depends_index": 0 },
+      { "type": "flag", "name": "导入传送", "value": true, "depends_on": "类型", "depends_index": 0 },
+      { "type": "num", "name": "传送距离", "min": 0, "max": 100, "value": 45, "decimals": 0, "depends_on": "类型", "depends_index": 0 },
+      { "type": "flag", "name": "卡墙检测", "value": false, "depends_on": "类型", "depends_index": 0 },
+      { "type": "num", "name": "卡墙X轴", "min": -50, "max": 50, "value": 0, "decimals": 0, "depends_on": "类型", "depends_index": 0 },
+      { "type": "num", "name": "卡墙Y轴", "min": -50, "max": 50, "value": 20, "decimals": 0, "depends_on": "类型", "depends_index": 0 },
+      { "type": "num", "name": "卡墙Z轴", "min": -50, "max": 50, "value": 0, "decimals": 0, "depends_on": "类型", "depends_index": 0 },
+      { "type": "flag", "name": "显示信息", "value": true, "depends_on": "类型", "depends_index": 0 },
+      { "type": "num", "name": "Gui大小", "min": 0, "max": 30, "value": 20, "decimals": 0 },
+      { "type": "num", "name": "Gui圆角", "min": 0, "max": 30, "value": 15, "decimals": 0 },
+      { "type": "num", "name": "Gui不透明", "min": 0, "max": 100, "value": 80, "decimals": 0 },
+      { "type": "flag", "name": "隐藏指令", "value": true, "depends_on": "类型", "depends_index": 0 },
+      { "type": "button", "name": "选择建筑", "depends_on": "类型", "depends_index": 0 },
+      { "type": "flag", "name": "起点", "value": false, "depends_on": "类型", "depends_index": 1 },
+      { "type": "flag", "name": "终点", "value": false, "depends_on": "类型", "depends_index": 1 },
+      { "type": "num", "name": "导出速度", "min": 0, "max": 100, "value": 20, "decimals": 0, "depends_on": "类型", "depends_index": 1 },
+      { "type": "num", "name": "导出间隔", "min": 0, "max": 100, "value": 25, "decimals": 0, "depends_on": "类型", "depends_index": 1 },
+      { "type": "num", "name": "暂停间隔", "min": 0, "max": 100, "value": 25, "decimals": 0, "depends_on": "类型", "depends_index": 1 },
+      { "type": "num", "name": "导出传送", "min": 0, "max": 100, "value": 45, "decimals": 0, "depends_on": "类型", "depends_index": 1 },
+      { "type": "flag", "name": "显示信息", "value": true, "depends_on": "类型", "depends_index": 1 },
+      { "type": "text", "name": "文件名称", "value": "Orange", "depends_on": "类型", "depends_index": 1 }
+    ]},
+    { "id": "chatroom", "name": "聊天室", "icon": "CHAT", "keybind": true, "on": true, "settings": [] },
+    { "id": "runCommand", "name": "执行指令", "icon": "LIST", "keybind": true, "settings": [
+      { "type": "num", "name": "速度", "min": 0, "max": 100, "value": 0, "decimals": 0 },
+      { "type": "text", "name": "指令", "value": "/say Hello Orange" },
+      { "type": "flag", "name": "文件执行", "value": false },
+      { "type": "text", "name": "路径", "value": "/storage/emulated/0/Android/data/com.netease.x19/files/Orange/指令/demo.txt" }
+    ]},
+    { "id": "viewUser", "name": "查看用户", "icon": "INFO", "run": true, "keybind": true, "settings": [
+      { "type": "num", "name": "Gui大小", "min": 1, "max": 50, "value": 30, "decimals": 0 },
+      { "type": "num", "name": "Gui圆角", "min": 0, "max": 50, "value": 30, "decimals": 0 }
+    ]},
+    { "id": "cardKeyTime", "name": "卡密时常", "icon": "CLOCK", "run": true, "keybind": true, "settings": [] },
+    { "id": "saveConfig", "name": "保存配置", "icon": "SAVE", "run": true, "settings": [
+      { "type": "text", "name": "名称", "value": "Orange" }
+    ]},
+    { "id": "loadConfig", "name": "加载配置", "icon": "FOLDER", "run": true, "settings": [] }
+  ]
+}

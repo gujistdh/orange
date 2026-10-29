@@ -1,0 +1,112 @@
+{
+  "orange": 2,
+  "category": "战斗",
+  "modules": [
+    { "id": "killAura", "name": "杀戮光环", "icon": "SWORD", "keybind": true, "settings": [
+      { "type": "num", "name": "CPS", "min": 1, "max": 100, "value": 20, "decimals": 2 },
+      { "type": "num", "name": "范围", "min": 1, "max": 20, "value": 5, "decimals": 2 },
+      { "type": "num", "name": "数量", "min": 1, "max": 100, "value": 3, "decimals": 0 },
+      { "type": "mode", "name": "攻击模式", "modes": ["单体模式", "多体模式", "轮流模式"], "index": 0 },
+      { "type": "check", "name": "攻击目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 },
+      { "type": "flag", "name": "挥手", "value": true },
+      { "type": "flag", "name": "固定", "value": false },
+      { "type": "num", "name": "预测", "min": 0, "max": 10, "value": 1, "decimals": 0 },
+      { "type": "mode", "name": "优先", "modes": ["距离", "血量"], "index": 0 },
+      { "type": "flag", "name": "武器切换", "value": false },
+      { "type": "flag", "name": "隔墙攻击", "value": true },
+      { "type": "mode", "name": "视角范围", "modes": ["360", "180"], "index": 0 },
+      { "type": "flag", "name": "转头", "value": false },
+      { "type": "mode", "name": "转头类型", "modes": ["攻击", "距离", "血量"], "index": 0 },
+      { "type": "flag", "name": "信息显示", "value": true },
+      { "type": "flag", "name": "范围光环", "value": true },
+      { "type": "mode", "name": "光环颜色", "modes": ["颜色", "彩色"], "index": 0 },
+      { "type": "text", "name": "颜色", "value": "白色" }
+    ]},
+    { "id": "infiniteAura", "name": "无限光环", "icon": "SPARK", "keybind": true, "settings": [
+      { "type": "mode", "name": "攻击目标", "modes": ["多目标", "单目标"], "index": 0 },
+      { "type": "num", "name": "攻击距离", "min": 1, "max": 5000, "value": 100, "decimals": 0 },
+      { "type": "num", "name": "数量", "min": 1, "max": 100, "value": 40, "decimals": 0 },
+      { "type": "num", "name": "攻击次数", "min": 1, "max": 20, "value": 10, "decimals": 0 },
+      { "type": "num", "name": "攻击延迟", "min": 1, "max": 5000, "value": 1000, "decimals": 0 },
+      { "type": "num", "name": "攻击拉回", "min": 1, "max": 1000, "value": 500, "decimals": 0 },
+      { "type": "flag", "name": "固定", "value": false },
+      { "type": "flag", "name": "挥手", "value": true },
+      { "type": "flag", "name": "坐骑", "value": false }
+    ]},
+    { "id": "autoFollow", "name": "锁敌", "icon": "TARGET", "keybind": true, "settings": [
+      { "type": "num", "name": "偏移X", "min": -10, "max": 10, "value": 0, "decimals": 1 },
+      { "type": "num", "name": "偏移Y", "min": -10, "max": 10, "value": 0, "decimals": 1 },
+      { "type": "num", "name": "偏移Z", "min": -10, "max": 10, "value": 0, "decimals": 1 },
+      { "type": "num", "name": "距离", "min": 1, "max": 1000, "value": 100, "decimals": 0 },
+      { "type": "flag", "name": "固定", "value": false },
+      { "type": "flag", "name": "坐骑", "value": false }
+    ]},
+    { "id": "circle", "name": "环绕攻击", "icon": "CLOCK", "keybind": true, "settings": [
+      { "type": "num", "name": "移动速度", "min": 0, "max": 10, "value": 1, "decimals": 2 },
+      { "type": "num", "name": "距离", "min": 0, "max": 1000, "value": 100, "decimals": 0 },
+      { "type": "num", "name": "半径", "min": 0, "max": 12, "value": 3, "decimals": 2 },
+      { "type": "flag", "name": "固定", "value": false },
+      { "type": "flag", "name": "坐骑", "value": false }
+    ]},
+    { "id": "spacing", "name": "控制间距", "icon": "SLIDERS", "keybind": true, "settings": [
+      { "type": "num", "name": "距离", "min": 1, "max": 10, "value": 5, "decimals": 0 },
+      { "type": "flag", "name": "坐骑", "value": false }
+    ]},
+    { "id": "hitbox", "name": "碰撞箱", "icon": "BLOCK", "keybind": true, "settings": [
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 },
+      { "type": "num", "name": "碰撞大小", "min": 1, "max": 20, "value": 5, "decimals": 0 }
+    ]},
+    { "id": "entityRiding", "name": "实体乘坐", "icon": "CUBE", "keybind": true, "settings": [
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 }
+    ]},
+    { "id": "autoBow", "name": "自动拉弓", "icon": "TARGET", "keybind": true, "settings": [] },
+    { "id": "attackEffects", "name": "攻击特效", "icon": "SPARK", "keybind": true, "settings": [
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 },
+      { "type": "num", "name": "线条大小", "min": 0, "max": 10, "value": 3, "decimals": 1 },
+      { "type": "num", "name": "显示时常", "min": 0, "max": 10000, "value": 5000, "decimals": 0 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "attackCount", "name": "攻击次数", "icon": "LIST", "keybind": true, "settings": [
+      { "type": "num", "name": "次数", "min": 0, "max": 10, "value": 5, "decimals": 0 },
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 },
+      { "type": "flag", "name": "挥手", "value": true },
+      { "type": "num", "name": "距离", "min": 1, "max": 20, "value": 7, "decimals": 0 }
+    ]},
+    { "id": "attackDamage", "name": "攻击翻倍", "icon": "BOLT", "keybind": true, "settings": [
+      { "type": "num", "name": "数量", "min": 0, "max": 1000, "value": 300, "decimals": 0 },
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 }
+    ]},
+    { "id": "counterattack", "name": "被打反击", "icon": "SHIELD", "keybind": true, "settings": [
+      { "type": "num", "name": "次数", "min": 1, "max": 10, "value": 5, "decimals": 0 },
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 },
+      { "type": "flag", "name": "挥手", "value": true },
+      { "type": "num", "name": "距离", "min": 1, "max": 20, "value": 7, "decimals": 0 }
+    ]},
+    { "id": "knockback", "name": "反击退", "icon": "BOLT", "keybind": true, "settings": [] },
+    { "id": "trap", "name": "围人", "icon": "CUBE", "keybind": true, "settings": [
+      { "type": "num", "name": "范围", "min": 1, "max": 20, "value": 5, "decimals": 2 },
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 },
+      { "type": "flag", "name": "挥手", "value": true }
+    ]},
+    { "id": "selfTrap", "name": "SelfTrap", "icon": "SHIELD", "keybind": true, "settings": [
+      { "type": "num", "name": "高度", "min": 1, "max": 3, "value": 2, "decimals": 0 },
+      { "type": "flag", "name": "挥手", "value": true }
+    ]},
+    { "id": "killis", "name": "自杀光环", "icon": "SPARK", "keybind": true, "settings": [
+      { "type": "num", "name": "CPS", "min": 1, "max": 100, "value": 20, "decimals": 2 },
+      { "type": "flag", "name": "挥手", "value": true }
+    ]},
+    { "id": "auraRing", "name": "脚下光环", "icon": "CLOCK", "keybind": true, "settings": [
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" },
+      { "type": "num", "name": "距离", "min": 1, "max": 20, "value": 5, "decimals": 0 }
+    ]},
+    { "id": "killMessage", "name": "击杀发言", "icon": "CHAT", "keybind": true, "settings": [
+      { "type": "text", "name": "发言内容", "value": "你好 Orange" }
+    ]},
+    { "id": "attackMessage", "name": "攻击发言", "icon": "CHAT", "keybind": true, "settings": [
+      { "type": "text", "name": "发言内容", "value": "你好 Orange" }
+    ]}
+  ]
+}

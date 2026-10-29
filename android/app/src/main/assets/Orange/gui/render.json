@@ -1,0 +1,178 @@
+{
+  "orange": 2,
+  "category": "渲染",
+  "modules": [
+    { "id": "esp", "name": "ESP", "icon": "EYE", "keybind": true, "settings": [
+      { "type": "num", "name": "距离", "min": 1, "max": 5000, "value": 100, "decimals": 2 },
+      { "type": "num", "name": "线条", "min": 1, "max": 10, "value": 3, "decimals": 2 },
+      { "type": "num", "name": "数量", "min": 1, "max": 100, "value": 3, "decimals": 0 },
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物", "自身"], "value": 11 },
+      { "type": "mode", "name": "类型", "modes": ["3D方框", "2D矩阵", "3D填充", "2D填充"], "index": 0 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹", "距离"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "helditeminfo", "name": "手持信息", "icon": "HAND", "keybind": true, "settings": [
+      { "type": "num", "name": "大小", "min": 0, "max": 50, "value": 30, "decimals": 0 },
+      { "type": "num", "name": "圆角", "min": 0, "max": 50, "value": 20, "decimals": 0 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩色"], "index": 0 },
+      { "type": "text", "name": "颜色", "value": "白色" }
+    ]},
+    { "id": "fog", "name": "修改雾效", "icon": "CLOUD", "keybind": true, "settings": [
+      { "type": "mode", "name": "雾效类型", "modes": ["无", "天气", "水", "岩浆", "抗火", "细雪"], "index": 0 }
+    ]},
+    { "id": "entityTrace", "name": "实体连线", "icon": "TRACER", "keybind": true, "settings": [
+      { "type": "num", "name": "距离", "min": 1, "max": 5000, "value": 100, "decimals": 2 },
+      { "type": "num", "name": "线条", "min": 1, "max": 10, "value": 3, "decimals": 2 },
+      { "type": "num", "name": "数量", "min": 1, "max": 100, "value": 3, "decimals": 0 },
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹", "距离"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "headHalo", "name": "头顶光环", "icon": "SUN", "keybind": true, "settings": [
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物", "自身"], "value": 11 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "trail", "name": "运动尾迹", "icon": "TRACER", "keybind": true, "settings": [
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物", "自身"], "value": 11 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" },
+      { "type": "num", "name": "时间", "min": 1, "max": 10000, "value": 4000, "decimals": 2 }
+    ]},
+    { "id": "floatingText", "name": "悬浮文字", "icon": "TAG", "keybind": true, "settings": [
+      { "type": "num", "name": "数量", "min": 1, "max": 1000, "value": 40, "decimals": 0 },
+      { "type": "num", "name": "大小", "min": 1, "max": 100, "value": 12, "decimals": 2 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" },
+      { "type": "text", "name": "内容", "value": "Orange" }
+    ]},
+    { "id": "tagRender", "name": "实体标签", "icon": "TAG", "keybind": true, "settings": [
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物", "自身"], "value": 11 },
+      { "type": "num", "name": "范围", "min": 1, "max": 5000, "value": 100, "decimals": 0 },
+      { "type": "num", "name": "数量", "min": 1, "max": 100, "value": 3, "decimals": 0 },
+      { "type": "num", "name": "文字大小", "min": 0.5, "max": 50, "value": 3.65, "decimals": 2 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹", "距离"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" },
+      { "type": "flag", "name": "坐标", "value": false },
+      { "type": "flag", "name": "名称", "value": false },
+      { "type": "flag", "name": "血量", "value": true },
+      { "type": "flag", "name": "距离", "value": true }
+    ]},
+    { "id": "fov", "name": "视野", "icon": "MAGNIFIER", "keybind": true, "settings": [
+      { "type": "num", "name": "视野", "min": 5, "max": 130, "value": 70, "decimals": 1 }
+    ]},
+    { "id": "handheldRotation", "name": "手持旋转", "icon": "HAND", "keybind": true, "settings": [
+      { "type": "num", "name": "旋转速度", "min": 0, "max": 30, "value": 15, "decimals": 0 }
+    ]},
+    { "id": "dropped3D", "name": "3D掉落", "icon": "CUBE", "keybind": true, "settings": [] },
+    { "id": "worldRender", "name": "世界渲染", "icon": "GRID", "keybind": true, "settings": [
+      { "type": "num", "name": "数量", "min": 0, "max": 1000, "value": 500, "decimals": 0 }
+    ]},
+    { "id": "blockRender", "name": "方块渲染", "icon": "BLOCK", "keybind": true, "settings": [
+      { "type": "num", "name": "速度", "min": 5000, "max": 10000, "value": 5000, "decimals": 0 },
+      { "type": "num", "name": "范围", "min": 1, "max": 10000, "value": 100, "decimals": 0 },
+      { "type": "num", "name": "数量", "min": 1, "max": 10000, "value": 100, "decimals": 0 },
+      { "type": "mode", "name": "渲染类型", "modes": ["3D方块", "3D填充"], "index": 1 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩色"], "index": 0 },
+      { "type": "text", "name": "颜色", "value": "白色" },
+      { "type": "num", "name": "线条", "min": 1, "max": 10, "value": 3, "decimals": 0 },
+      { "type": "flag", "name": "射线", "value": true },
+      { "type": "flag", "name": "名称", "value": false },
+      { "type": "flag", "name": "坐标", "value": false },
+      { "type": "flag", "name": "距离", "value": false },
+      { "type": "num", "name": "Gui大小", "min": 1, "max": 50, "value": 30, "decimals": 0 },
+      { "type": "num", "name": "圆角", "min": 1, "max": 30, "value": 15, "decimals": 0 },
+      { "type": "num", "name": "不透明", "min": 0, "max": 100, "value": 80, "decimals": 0 },
+      { "type": "button", "name": "渲染方块" }
+    ]},
+    { "id": "blockOutline", "name": "方块轮廓", "icon": "BLOCK", "keybind": true, "settings": [
+      { "type": "num", "name": "线条大小", "min": 0, "max": 10, "value": 3, "decimals": 1 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩色"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "placeRender", "name": "放置渲染", "icon": "CUBE", "keybind": true, "settings": [
+      { "type": "num", "name": "速度", "min": 0, "max": 100, "value": 20, "decimals": 0 },
+      { "type": "mode", "name": "类型", "modes": ["3D方框", "3D填充"], "index": 1 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩色"], "index": 0 },
+      { "type": "text", "name": "颜色", "value": "白色" },
+      { "type": "flag", "name": "反向", "value": false }
+    ]},
+    { "id": "landingAura", "name": "落地光环", "icon": "CLOCK", "keybind": true, "settings": [
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物", "自身"], "value": 11 },
+      { "type": "num", "name": "线条大小", "min": 0, "max": 10, "value": 3, "decimals": 1 },
+      { "type": "num", "name": "显示时常", "min": 1, "max": 10000, "value": 5000, "decimals": 0 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩色"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "selfAura", "name": "自身法阵", "icon": "SPARK", "keybind": true, "settings": [
+      { "type": "num", "name": "线条大小", "min": 0, "max": 10, "value": 3, "decimals": 1 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "worldImprisonment", "name": "世界囚笼", "icon": "GRID", "keybind": true, "settings": [
+      { "type": "num", "name": "扩散速度", "min": 1, "max": 60, "value": 12, "decimals": 1 },
+      { "type": "num", "name": "囚笼半径", "min": 1, "max": 200, "value": 100, "decimals": 0 },
+      { "type": "num", "name": "石柱高度", "min": 1, "max": 150, "value": 130, "decimals": 0 },
+      { "type": "num", "name": "天空闪电", "min": 0, "max": 10, "value": 7, "decimals": 0 },
+      { "type": "num", "name": "符文数量", "min": 0, "max": 100, "value": 70, "decimals": 0 },
+      { "type": "flag", "name": "实体连接", "value": true },
+      { "type": "num", "name": "线条大小", "min": 0, "max": 10, "value": 3, "decimals": 1 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "effectRender", "name": "药水渲染", "icon": "GEM", "keybind": true, "settings": [
+      { "type": "num", "name": "Gui大小", "min": 1, "max": 40, "value": 25, "decimals": 0 },
+      { "type": "num", "name": "不透明", "min": 1, "max": 100, "value": 70, "decimals": 0 },
+      { "type": "num", "name": "圆角", "min": 1, "max": 100, "value": 50, "decimals": 0 }
+    ]},
+    { "id": "showCoords", "name": "显示坐标", "icon": "TARGET", "keybind": true, "settings": [
+      { "type": "num", "name": "Gui大小", "min": 1, "max": 20, "value": 15, "decimals": 0 },
+      { "type": "num", "name": "圆角", "min": 1, "max": 20, "value": 15, "decimals": 0 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "radarWarning", "name": "雷达预警", "icon": "TARGET", "keybind": true, "settings": [
+      { "type": "num", "name": "雷达大小", "min": 0, "max": 30, "value": 20, "decimals": 0 },
+      { "type": "num", "name": "距离", "min": 0, "max": 200, "value": 100, "decimals": 0 },
+      { "type": "num", "name": "雷达圆角", "min": 0, "max": 30, "value": 15, "decimals": 0 },
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物"], "value": 3 }
+    ]},
+    { "id": "highlightInfo", "name": "高亮信息", "icon": "MAGNIFIER", "keybind": true, "settings": [
+      { "type": "mode", "name": "类型", "modes": ["2D", "3D"], "index": 1 },
+      { "type": "num", "name": "大小", "min": 0, "max": 40, "value": 20, "decimals": 0 },
+      { "type": "num", "name": "圆角", "min": 0, "max": 30, "value": 20, "decimals": 0 },
+      { "type": "num", "name": "不透明", "min": 0, "max": 100, "value": 80, "decimals": 0 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩色"], "index": 0 },
+      { "type": "text", "name": "颜色", "value": "白色" }
+    ]},
+    { "id": "directionSign", "name": "方向标", "icon": "TRACER", "keybind": true, "settings": [
+      { "type": "num", "name": "Gui大小", "min": 0, "max": 30, "value": 20, "decimals": 0 },
+      { "type": "num", "name": "圆角", "min": 0, "max": 20, "value": 15, "decimals": 0 },
+      { "type": "num", "name": "不透明", "min": 0, "max": 100, "value": 60, "decimals": 0 },
+      { "type": "mode", "name": "颜色", "modes": ["颜色", "彩虹"], "index": 0 },
+      { "type": "text", "name": "颜色值", "value": "白色" }
+    ]},
+    { "id": "watermark", "name": "水印", "icon": "INFO", "keybind": true, "on": true, "settings": [
+    ]},
+    { "id": "funcNotif", "name": "功能通知", "icon": "BELL", "keybind": true, "on": true, "settings": [
+    ]},
+    { "id": "featureList", "name": "功能列表", "icon": "LIST", "keybind": true, "on": true, "settings": [
+    ]},
+    { "id": "viewCommandBlock", "name": "查看命令方块", "icon": "BLOCK", "keybind": true, "settings": [
+      { "type": "num", "name": "Gui大小", "min": 0, "max": 50, "value": 30, "decimals": 0 },
+      { "type": "num", "name": "Gui圆角", "min": 0, "max": 50, "value": 30, "decimals": 0 },
+      { "type": "flag", "name": "查看指令", "value": true },
+      { "type": "flag", "name": "查看悬停注释", "value": true },
+      { "type": "flag", "name": "查看方块类型", "value": false },
+      { "type": "flag", "name": "查看条件", "value": false },
+      { "type": "flag", "name": "查看红石控制", "value": false },
+      { "type": "flag", "name": "查看延迟刻数", "value": false }
+    ]},
+    { "id": "setTime", "name": "设置时间", "icon": "CLOCK", "keybind": true, "settings": [
+      { "type": "num", "name": "时间", "min": 0, "max": 100000, "value": 130, "decimals": 0 }
+    ]},
+    { "id": "setWeather", "name": "设置天气", "icon": "CLOUD", "keybind": true, "settings": [
+      { "type": "mode", "name": "天气", "modes": ["clear", "雨", "雷雨"], "index": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,7 @@
+音乐播放器 - 使用说明
+
+把 .ogg 或 .mp3 音乐文件放到本目录：
+/storage/emulated/0/Android/data/com.netease.x19/files/Orange/sounds/音乐/
+
+游戏内打开「杂物 - 音乐播放器」模块，屏幕中间会弹出音乐面板，
+点击列表中的文件即可播放，可重复点击同一首实现重叠播放。

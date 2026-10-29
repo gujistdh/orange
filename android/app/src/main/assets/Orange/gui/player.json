@@ -1,0 +1,77 @@
+{
+  "orange": 2,
+  "category": "玩家",
+  "modules": [
+    { "id": "teleport", "name": "坐标传送", "icon": "ARROWS", "keybind": true, "settings": [
+      { "type": "text", "name": "X", "value": "0" },
+      { "type": "text", "name": "Y", "value": "0" },
+      { "type": "text", "name": "Z", "value": "0" },
+      { "type": "mode", "name": "方式", "modes": ["坐标", "动量"], "index": 0 },
+      { "type": "num", "name": "速度", "min": 0, "max": 30, "value": 10, "decimals": 2 },
+      { "type": "flag", "name": "坐骑", "value": false }
+    ]},
+    { "id": "xrayCam", "name": "相机穿墙", "icon": "EYE", "keybind": true, "settings": [] },
+    { "id": "inventory", "name": "背包整理", "icon": "LIST", "keybind": true, "settings": [
+      { "type": "num", "name": "动作间隔", "min": 0, "max": 20, "value": 1, "decimals": 0 }
+    ]},
+    { "id": "autoApple", "name": "自动苹果", "icon": "GEM", "keybind": true, "settings": [
+      { "type": "num", "name": "血量", "min": 1, "max": 20, "value": 5, "decimals": 0 }
+    ]},
+    { "id": "autoTool", "name": "自动工具", "icon": "PICK", "keybind": true, "settings": [] },
+    { "id": "quickbuild", "name": "快速建造", "icon": "CUBE", "keybind": true, "settings": [
+      { "type": "num", "name": "操作距离", "min": 1, "max": 12, "value": 7, "decimals": 0 },
+      { "type": "mode", "name": "类型", "modes": ["填充", "框架", "空心", "圆", "圆锥", "破坏"], "index": 0 },
+      { "type": "flag", "name": "起点", "value": false, "depends_on": "类型", "depends_index": "0,1,2,5" },
+      { "type": "flag", "name": "终点", "value": false, "depends_on": "类型", "depends_index": "0,1,2,5" },
+      { "type": "flag", "name": "描点", "value": false, "depends_on": "类型", "depends_index": "3,4" },
+      { "type": "num", "name": "半径", "min": 1, "max": 12, "value": 5, "decimals": 0, "depends_on": "类型", "depends_index": "3,4" },
+      { "type": "num", "name": "高度", "min": 1, "max": 30, "value": 10, "decimals": 0, "depends_on": "类型", "depends_index": "4" }
+    ]},
+    { "id": "setDurability", "name": "设置耐久", "icon": "SLIDERS", "keybind": true, "settings": [
+      { "type": "num", "name": "耐久", "min": -32767, "max": 32767, "value": -32767, "decimals": 0 }
+    ]},
+    { "id": "auxEffect", "name": "设置药水", "icon": "GEM", "keybind": true, "settings": [
+      { "type": "mode", "name": "药水", "modes": "@aux_effect", "index": 0 }
+    ]},
+    { "id": "goatHorn", "name": "设置羊角", "icon": "GEM", "keybind": true, "settings": [
+      { "type": "mode", "name": "羊角", "modes": "@goat_horn", "index": 0 }
+    ]},
+    { "id": "bed", "name": "设置床", "icon": "BLOCK", "keybind": true, "settings": [
+      { "type": "mode", "name": "床", "modes": "@bed", "index": 0 }
+    ]},
+    { "id": "flag", "name": "设置旗帜", "icon": "TAG", "keybind": true, "settings": [
+      { "type": "mode", "name": "旗帜", "modes": "@flag", "index": 0 }
+    ]},
+    { "id": "ominousPotion", "name": "设置不祥药水", "icon": "GEM", "keybind": true, "settings": [
+      { "type": "mode", "name": "不祥药水", "modes": "@ominous_potion", "index": 0 }
+    ]},
+    { "id": "globalNightVision", "name": "全局夜视", "icon": "EYE", "keybind": true, "settings": [] },
+    { "id": "itemEditor", "name": "物品编辑器", "icon": "CUBE", "keybind": true, "settings": [] },
+    { "id": "enchantEditor", "name": "附魔编辑器", "icon": "GEM", "keybind": true, "settings": [] },
+    { "id": "nbtEditor", "name": "NBT编辑器", "icon": "LIST", "keybind": true, "settings": [] },
+    { "id": "effectEditor", "name": "效果编辑器", "icon": "GEM", "keybind": true, "settings": [] },
+    { "id": "soundEditor", "name": "音效编辑器", "icon": "FOLDER", "keybind": true, "settings": [] },
+    { "id": "particleEditor", "name": "粒子编辑器", "icon": "SPARK", "keybind": true, "settings": [] },
+    { "id": "playerAbility", "name": "玩家能力", "icon": "SHIELD", "keybind": true, "settings": [
+      { "type": "flag", "name": "建造方块", "value": true },
+      { "type": "flag", "name": "破坏方块", "value": true },
+      { "type": "flag", "name": "使用门和开关", "value": true },
+      { "type": "flag", "name": "打开容器", "value": true },
+      { "type": "flag", "name": "攻击玩家", "value": true },
+      { "type": "flag", "name": "攻击实体", "value": true },
+      { "type": "flag", "name": "操作员", "value": false },
+      { "type": "flag", "name": "使用指令", "value": false },
+      { "type": "flag", "name": "无敌", "value": false },
+      { "type": "flag", "name": "可飞行", "value": false },
+      { "type": "flag", "name": "飞行状态", "value": false },
+      { "type": "flag", "name": "穿墙", "value": false },
+      { "type": "flag", "name": "瞬间破坏", "value": false },
+      { "type": "flag", "name": "闪电等级", "value": false },
+      { "type": "flag", "name": "是否被禁言", "value": false },
+      { "type": "flag", "name": "世界建设者", "value": false }
+    ]},
+    { "id": "bigTop", "name": "大陀螺", "icon": "SPARK", "keybind": true, "settings": [
+      { "type": "num", "name": "速度", "min": 0, "max": 100, "value": 10, "decimals": 0 }
+    ]}
+  ]
+}

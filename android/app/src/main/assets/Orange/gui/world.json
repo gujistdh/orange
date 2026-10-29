@@ -1,0 +1,50 @@
+{
+  "orange": 2,
+  "category": "世界",
+  "modules": [
+    { "id": "gameMode", "name": "游戏模式", "icon": "CUBE", "keybind": true, "settings": [
+      { "type": "mode", "name": "游戏模式", "modes": ["生存", "创造", "冒险"], "index": 0 }
+    ]},
+    { "id": "posText", "name": "坐标打印", "icon": "TARGET", "keybind": true, "settings": [
+      { "type": "num", "name": "范围", "min": 1, "max": 5000, "value": 100, "decimals": 2 },
+      { "type": "check", "name": "目标", "modes": ["玩家", "实体", "掉落物", "自身"], "value": 11 },
+      { "type": "mode", "name": "方式", "modes": ["原版显示", "Gui显示"], "index": 0 }
+    ]},
+    { "id": "rideRootFlight", "name": "坐骑飞行", "icon": "UP", "keybind": true, "settings": [
+      { "type": "num", "name": "移动速度", "min": 0, "max": 10, "value": 1, "decimals": 1 },
+      { "type": "num", "name": "上下速度", "min": 0, "max": 10, "value": 1, "decimals": 1 }
+    ]},
+    { "id": "autoBreak", "name": "自动破坏", "icon": "PICK", "keybind": true, "settings": [
+      { "type": "num", "name": "破坏范围", "min": 1, "max": 10, "value": 5, "decimals": 0 }
+    ]},
+    { "id": "clickBreak", "name": "点击破坏", "icon": "PICK", "keybind": true, "settings": [
+      { "type": "num", "name": "破坏范围", "min": 1, "max": 10, "value": 5, "decimals": 0 }
+    ]},
+    { "id": "breakBlock", "name": "破坏方块", "icon": "PICK", "keybind": true, "settings": [
+      { "type": "num", "name": "速度", "min": 5000, "max": 10000, "value": 5000, "decimals": 0 },
+      { "type": "num", "name": "范围", "min": 1, "max": 12, "value": 7, "decimals": 0 },
+      { "type": "num", "name": "数量", "min": 1, "max": 10000, "value": 100, "decimals": 0 },
+      { "type": "button", "name": "破坏方块" }
+    ]},
+    { "id": "chestStealer", "name": "箱子取物", "icon": "CHEST", "keybind": true, "settings": [
+      { "type": "num", "name": "速度", "min": 0, "max": 10, "value": 3, "decimals": 0 }
+    ]},
+    { "id": "summonEntity", "name": "召唤实体", "icon": "SPARK", "keybind": true, "settings": [
+      { "type": "text", "name": "实体", "value": "minecraft:tnt" },
+      { "type": "num", "name": "数量", "min": 1, "max": 50, "value": 1, "decimals": 0 },
+      { "type": "num", "name": "召唤速度", "min": 0, "max": 1000, "value": 100, "decimals": 0 }
+    ]},
+    { "id": "tpMod", "name": "传送菜单", "icon": "ARROWS", "keybind": true, "settings": [
+      { "type": "mode", "name": "传送方式", "modes": ["坐标传送", "动量传送"], "index": 0 },
+      { "type": "num", "name": "移动速度", "min": 0, "max": 100, "value": 10, "decimals": 0 },
+      { "type": "flag", "name": "坐骑", "value": false }
+    ]},
+    { "id": "gameSpeed", "name": "游戏速度", "icon": "BOLT", "keybind": true, "settings": [
+      { "type": "num", "name": "速度", "min": 0, "max": 100, "value": 20, "decimals": 0 }
+    ]},
+    { "id": "packetResending", "name": "重复发包", "icon": "SPARK", "keybind": true, "settings": [
+      { "type": "num", "name": "数量", "min": 1, "max": 100, "value": 50, "decimals": 0 }
+    ]},
+    { "id": "stopPackets", "name": "停止发包", "icon": "SHIELD", "keybind": true, "settings": [] }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "orange": 2,
+  "category": "杂物",
+  "modules": [
+    { "id": "musicPlayer", "name": "音乐播放器", "icon": "FOLDER", "keybind": true, "settings": [] },
+    { "id": "rocketModel", "name": "自动火箭模型", "icon": "GEM", "run": true, "keybind": true, "settings": [] },
+    { "id": "guiRender", "name": "Gui渲染", "icon": "MAGNIFIER", "run": true, "keybind": true, "settings": [
+      { "type": "num", "name": "BlurRadius", "min": 0, "max": 100, "value": 0, "decimals": 0 },
+      { "type": "num", "name": "RefractionHeight", "min": 0, "max": 100, "value": 40, "decimals": 0 },
+      { "type": "num", "name": "RefractionAmount", "min": 0, "max": 100, "value": 40, "decimals": 0 },
+      { "type": "num", "name": "ChromaticAberration", "min": 0, "max": 100, "value": 10, "decimals": 0 }
+    ]}
+  ]
+}
